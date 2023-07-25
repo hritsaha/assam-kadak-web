@@ -41,8 +41,8 @@ function Carousel() {
 
 
   return (
-    <div className='bg-lime-50 h-[calc(100vh-56px)] w-full m-auto p-2 relative group'>
-        <div className='transition-opacity w-full h-full bg-center bg-cover duration-500 rounded-md'
+    <div className='bg-lime-50 h-[calc(100vh-56px)] w-full m-auto relative group'>
+        <div className='transition-opacity w-full h-full bg-center bg-cover duration-500 z-40'
                 style={{backgroundImage: `url(${slides[curr].url})`}}>
         </div>
 
@@ -51,7 +51,15 @@ function Carousel() {
 
         </div> */}
 
-        <div className=' absolute inset-0 flex items-center justify-between p-5 cursor-pointer ease-in-out '>
+        <div className='absolute inset-0 bg-gradient-to-b from-black opacity-50 transition-all flex z-50'>
+        </div>
+
+        <div className='absolute inset-0 z-50'>
+                <h1 className='text-6xl font-bold text-white'>A Tea Leaf Company</h1>
+
+        </div>
+
+        <div className=' absolute inset-0 flex items-center justify-between p-5 cursor-pointer ease-in-out z-10'>
                 <div className='hidden group-hover:block  rounded-full p-3 bg-white/40 hover:bg-lime-700 transition-color duration-300 hover:text-white' onClick={()=>prevImg()}>
                         <ChevronLeft size={40}></ChevronLeft>
                 </div>

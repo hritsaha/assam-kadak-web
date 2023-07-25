@@ -4,7 +4,7 @@ import Carousel from './Carousel'
 
 function Hero() {
   return (
-    <div>
+    <div className='mb-12'>
       {/* <ImageCarousel></ImageCarousel> */}
       <Carousel></Carousel>
     </div>

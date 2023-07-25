@@ -21,7 +21,7 @@ function Navbar() {
 
   return (
     <div className={``}>
-      <div className='h-24 bg-gray-100 flex items-center justify-between px-4 drop-shadow-md positio'>
+      <div className='h-24 bg-white flex items-center justify-between px-7 drop-shadow-md positio'>
         <RxHamburgerMenu onClick={()=>handleMenu()} className='sm:hidden text-[2rem] hover:cursor-pointer'></RxHamburgerMenu>
         
         <div className='w-full flex justify-center sm:justify-start'>
