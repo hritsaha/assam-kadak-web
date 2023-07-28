@@ -40,7 +40,7 @@ function Navbar() {
 
       {
         <div className={`${menu ? 'absolute h-full w-full top-0 left-0' : 'absolute h-full top-0 left-[-100%] overflow-hidden'} lg:hidden `}>
-          <div className={`z-30 bg-lime-700 h-screen   ${menu ? 'absolute top-0 left-0 transition-all duration-500 ease-in-out' : 'left-[-100%]'} bottom-0 w-4/5 text-white p-10`}>
+          <div className={`z-30 bg-white text-lime-700 h-screen   ${menu ? 'absolute top-0 left-0 transition-all duration-500 ease-in-out' : 'left-[-100%]'} bottom-0 w-4/5 text-white p-10`}>
             <div className='flex justify-between'>
               <h1 className='font-bold text-2xl mb-8 h-full'>Options:</h1>
               <GiCancel onClick={()=>{handleMenu()}} className='font-bold text-2xl text-red-500 hover:cursor-pointer'></GiCancel>
@@ -54,7 +54,7 @@ function Navbar() {
             </ul>
           </div>
 
-          <div className={`z-10 opacity-40  bg-black h-screen absolute top-0 ${menu ? 'left-0' : 'left-[-100%]'} bottom-0 w-full text-white p-10`}>
+          <div className={`z-10 opacity-40  bg-black h-screen transition absolute top-0 ${menu ? 'left-0' : 'left-[-100%]'} bottom-0 w-full text-white p-10`}>
           </div>
         </div>
       }
