@@ -22,7 +22,7 @@ export default function Subscribe() {
         <div className='z-20 drop-shadow-sm'>   
                 <form action='submit' onSubmit={(e)=>handleFormSubmit(e)} className=''>
                         <input className='px-9 py-3 sm:w-96 focus:outline-none rounded-tl-lg rounded-bl-lg' type="text" placeholder="Your email address" id="email-id" onChange={(e)=>setEmail(e.target.value)}/>
-                        <button className='px-9 py-3  rounded-tr-lg rounded-br-lg text-white font-bold bg-lime-500 hover:bg-lime-600 transition duration-500' type='submit'>Subscribe</button>
+                        <button className='px-9 py-3  rounded-tr-lg rounded-br-lg text-white  bg-lime-500 hover:bg-lime-600 transition duration-500' type='submit'>Subscribe</button>
                 </form>
         </div>
     </div>
